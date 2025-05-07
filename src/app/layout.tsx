@@ -13,17 +13,13 @@ export const metadata: Metadata = {
 
 interface LayoutProps {
   children: React.ReactNode;
-  types: string;
 }
 
-export default function RootLayout({
-  children,
-  types,
-}: LayoutProps) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="pt-BR">
       <head>
-        <link rel='icon' href="/product_mindset_logo.png"/>
+        <link rel="icon" href="/product_mindset_logo.png" />
       </head>
       <body className={poppins.className}>
         {children}
