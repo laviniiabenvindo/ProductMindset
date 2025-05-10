@@ -1,10 +1,16 @@
 'use client';
-import { useState } from "react";
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Box, Button, FormControl, TextField, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Button,
+  FormControl,
+  TextField,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
 
 export default function ContentSection() {
-
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
@@ -68,7 +74,7 @@ export default function ContentSection() {
                 type="text"
                 required
                 inputProps={{
-                  pattern: "[A-Za-z ]{3,}",
+                  pattern: '[A-Za-z ]{3,}',
                   maxLength: 10,
                 }}
                 placeholder="Nome"
@@ -192,5 +198,5 @@ export default function ContentSection() {
         </Box>
       )}
     </div>
-  )
+  );
 }
