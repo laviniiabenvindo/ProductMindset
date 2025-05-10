@@ -122,15 +122,15 @@ export default function ContentSection() {
         </div>
       )}
       {(isMediumScreen || isSmallScreen) && (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-full">
           <p className="text-2xl pt-5">eBooks/Livros Publicados</p>
           <Box className="flex flex-col items-center my-5 gap-5 justify-between">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center w-full ">
               <Button onClick={handlePrev}>
                 {' '}
                 <ArrowBack />{' '}
               </Button>
-              <div className="relative h-64 w-64">
+              <div className="relative h-44 w-44">
                 <Image
                   src={images[index]}
                   alt={`Look ${index + 1}`}
@@ -158,12 +158,12 @@ export default function ContentSection() {
             </Button>
           </Box>
           <Box className="flex flex-col items-center my-5 gap-5 justify-between">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center w-full">
               <Button onClick={handlePrev2}>
                 {' '}
                 <ArrowBack />{' '}
               </Button>
-              <div className="relative h-64 w-64">
+              <div className="relative h-44 w-44">
                 <Image
                   src={images2[index2]}
                   alt={`Look ${index + 1}`}
